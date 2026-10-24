@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memória do herói</title>
+    <link rel="stylesheet" href="CSSs/main.css">
+    <link rel="stylesheet" href="CSSs/game.css">
+    <script src="SCRIPTs/card.js" defer></script>
+    <script src="SCRIPTs/board.js" defer></script>
+    <script src="SCRIPTs/main.js" defer></script>
+</head>
+<body>
+<template id="cardtemplate">
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front"></div>
+            <div class="flip-card-back"><img src="images/heros/card001.jpeg" alt=""></div>
+        </div>
+    </div>
+</template>
+<!-- template#cardtemplate>.flip-card>.flip-card-inner>.flip-card-front+.flip-card-back>img -->
+<!-- ^->comando pra fazer esses bagulho tudo aqui em cima-->
+    <div id="board" class="hidden"></div>
+
+    <div id="menu">
+        <h1>Memória do herói</h1>
+        <div class="container">
+            <select name="numCards" id="numCards"></select>
+            <button id="start">Start</button>
+        </div>
+    </div>
+</body>
+</html>
